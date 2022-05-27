@@ -4,6 +4,8 @@ using System;
 publcic class WorkScript{
     public float speed = 5;
     public Transform Target;
+
+    public bool IsMove{get; private set;}
     
     public void Start(){
         if(Target == null)

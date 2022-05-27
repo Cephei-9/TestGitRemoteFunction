@@ -16,6 +16,6 @@ publcic class WorkScript{
 
     public void Update(){
         Vector3 toTarget = Target.position - transform.position;
-        transform.position += toTarget.normalized * speed;
+        transform.position += toTarget.normalized * speed * Time.deltaTime;
     }
 }

@@ -29,3 +29,7 @@ publcic class WorkScript : MonoBehaviour{
             IsMove = false;        
     }
 }
+
+public class Animation{
+    
+}

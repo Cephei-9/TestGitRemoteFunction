@@ -1,3 +1,31 @@
-publcic class WorkScript{
+using UnityEngine;
+using System;
 
+publcic class WorkScript : MonoBehaviour{
+
+    //Ready to Pull Request
+
+
+    public float speed = 5;
+    public Transform Target;
+
+    public bool IsMove{get; private set;}
+
+    public bool stopDistance = 0.5f;
+    
+    public void Start(){
+        if(Target == null)
+            speed = 0;
+    }
+
+    public void Update(){
+        if(IsMove == false)
+            return;
+
+        Vector3 toTarget = Target.position - transform.position;
+        transform.position += toTarget.normalized * speed * Time.deltaTime;
+
+        if(toTarget.magnitude < stopDistance)
+            IsMove = false;        
+    }
 }

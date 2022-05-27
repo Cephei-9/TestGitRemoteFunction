@@ -1,3 +1,4 @@
 publcic class WorkScript{
-
+    public float speed = 5;
+    public Transform Target;
 }

@@ -33,3 +33,7 @@ publcic class WorkScript : MonoBehaviour{
 public class Animation{
     
 }
+
+public class Effects{
+    
+}

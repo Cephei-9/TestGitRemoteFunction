@@ -6,7 +6,8 @@ publcic class WorkScript{
     public Transform Target;
     
     public void Start(){
-
+        if(Target == null)
+            speed = 0;
     }
 
     public void Update(){

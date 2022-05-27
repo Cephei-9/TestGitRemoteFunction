@@ -15,7 +15,13 @@ publcic class WorkScript{
     }
 
     public void Update(){
+        if(IsMove == false)
+            return;
+
         Vector3 toTarget = Target.position - transform.position;
         transform.position += toTarget.normalized * speed * Time.deltaTime;
+
+        if(toTarget.magnitude < stopDistance)
+            IsMove = false;        
     }
 }

@@ -1,3 +1,12 @@
-publcic class WorkScript{
+using UnityEngine;
+using System;
 
+publcic class WorkScript{
+    public void Start(){
+
+    }
+
+    public void Update(){
+
+    }
 }

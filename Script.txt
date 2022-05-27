@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-publcic class WorkScript{
+publcic class WorkScript : MonoBehaviour{
     public float speed = 5;
     public Transform Target;
 

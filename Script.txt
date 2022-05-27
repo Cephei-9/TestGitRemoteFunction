@@ -6,6 +6,8 @@ publcic class WorkScript{
     public Transform Target;
 
     public bool IsMove{get; private set;}
+
+    public bool stopDistance = 0.5f;
     
     public void Start(){
         if(Target == null)
